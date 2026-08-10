@@ -43,9 +43,6 @@ export default function Footer() {
               {site.instagram}
             </a>
           </p>
-          <p>
-            <span>LinkedIn</span> {site.linkedin}
-          </p>
         </div>
       </div>
 

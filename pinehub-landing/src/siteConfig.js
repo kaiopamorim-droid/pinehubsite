@@ -15,9 +15,6 @@ export const site = {
 
   email: "pinehubmkt@gmail.com",
   instagram: "@pinehub_",
-
-  // PLACEHOLDER — troque quando tiver o perfil.
-  linkedin: "[LINKEDIN]",
 };
 
 export const whatsappHref = () =>
