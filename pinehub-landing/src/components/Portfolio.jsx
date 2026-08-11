@@ -24,19 +24,40 @@ export default function Portfolio() {
               <Reveal key={p.name} delay={i * 70}>
                 <div className="portfolio-card">
                   <div className="portfolio-card__media">
-                    {p.images ? (
-                      p.images.map((src, imgIndex) => (
-                        <img
-                          key={src}
-                          src={src}
-                          alt={`${p.name} — foto ${imgIndex + 1}`}
-                          className="portfolio-card__photo"
-                          style={{
-                            animationDelay: `${imgIndex * 3}s`,
-                            zIndex: p.images.length - imgIndex,
-                          }}
-                        />
-                      ))
+                    {p.video ? (
+                      <video
+                        className="portfolio-card__video"
+                        src={p.video}
+                        poster={p.videoPoster}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                        aria-label={`${p.name} — vídeo`}
+                      />
+                    ) : p.images ? (
+                      p.images.map((src, imgIndex) => {
+                        const perSlide = 3;
+                        const count = p.images.length;
+                        return (
+                          <img
+                            key={src}
+                            src={src}
+                            alt={`${p.name} — foto ${imgIndex + 1}`}
+                            className="portfolio-card__photo"
+                            style={{
+                              animationName:
+                                count >= 5
+                                  ? "portfolio-crossfade-5"
+                                  : "portfolio-crossfade-3",
+                              animationDuration: `${count * perSlide}s`,
+                              animationDelay: `${imgIndex * perSlide}s`,
+                              zIndex: count - imgIndex,
+                            }}
+                          />
+                        );
+                      })
                     ) : (
                       <>
                         <TrianglePattern opacity={0.4} />

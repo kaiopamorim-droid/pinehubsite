@@ -781,6 +781,14 @@ button {
   transition: transform 0.4s var(--ease);
 }
 
+.portfolio-card__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .portfolio-card__photo {
   position: absolute;
   inset: 0;
@@ -788,15 +796,27 @@ button {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  animation: portfolio-crossfade 9s ease-in-out infinite;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
-@keyframes portfolio-crossfade {
+@keyframes portfolio-crossfade-3 {
   0%,
   28% {
     opacity: 1;
   }
   33%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes portfolio-crossfade-5 {
+  0%,
+  16.8% {
+    opacity: 1;
+  }
+  20%,
   100% {
     opacity: 0;
   }

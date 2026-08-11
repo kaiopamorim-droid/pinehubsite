@@ -164,6 +164,8 @@ export const portfolioProjects = [
     tag: "Branding",
     icon: "target",
     description: "Identidade visual profissional para consolidar a marca pessoal.",
+    video: "/portfolio/rafael-1.mp4",
+    videoPoster: "/portfolio/rafael-poster.jpg",
   },
 ];
 
