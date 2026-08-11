@@ -427,9 +427,9 @@ button {
 
 .hero__pattern {
   position: absolute;
-  inset: auto -10% -30% auto;
+  inset: auto -10% 0 auto;
   width: 60%;
-  height: 90%;
+  height: 85%;
   z-index: 0;
 }
 
