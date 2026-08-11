@@ -20,17 +20,14 @@ export default function TrianglePattern({ className = "", opacity = 1, animate =
         const size = 60;
         const x = col * size;
         const y = row * size;
-        const up = (col + row) % 2 === 0;
         const tone = tones[(col + row) % tones.length];
-        const points = up
-          ? `${x},${y + size} ${x + size},${y + size} ${x + size / 2},${y}`
-          : `${x},${y} ${x + size},${y} ${x + size / 2},${y + size}`;
+        const points = `${x},${y + size} ${x + size},${y + size} ${x + size / 2},${y}`;
         return (
           <polygon
             key={i}
             points={points}
             fill={tone}
-            className={`triangle-pattern__cell ${up ? "triangle-pattern__cell--up" : ""}`}
+            className="triangle-pattern__cell triangle-pattern__cell--up"
             style={{ animationDelay: `${(i % 7) * 0.35}s` }}
           />
         );
