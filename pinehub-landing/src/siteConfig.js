@@ -167,11 +167,6 @@ export const faq = [
       "Não temos um pacote fechado — o escopo é definido depois do diagnóstico, de acordo com as frentes que fazem sentido para o seu momento (marca, landing page, audiovisual ou tudo junto).",
   },
   {
-    question: "Existe fidelidade no contrato?",
-    answer:
-      "Trabalhamos com contratos mensais, sem fidelidade longa. Acreditamos que o resultado é que deve manter a parceria, não a burocracia.",
-  },
-  {
     question: "Quais ferramentas e canais vocês usam?",
     answer:
       "Automação com IA para fluxos de marketing, desenvolvimento de landing pages sob medida, além de produção própria de fotografia e vídeo — tudo integrado numa única operação.",
