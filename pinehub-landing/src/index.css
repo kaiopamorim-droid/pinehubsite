@@ -164,6 +164,30 @@ button {
   .hero__scroll-cue-arrow {
     animation: none;
   }
+  .triangle-pattern__cell {
+    animation: none !important;
+  }
+}
+
+.triangle-pattern__cell {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.triangle-pattern--animated .triangle-pattern__cell {
+  animation: triangle-pulse 6s ease-in-out infinite;
+}
+
+@keyframes triangle-pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* =========================================================================

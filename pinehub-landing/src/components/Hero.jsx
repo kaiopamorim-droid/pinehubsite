@@ -6,7 +6,7 @@ import { site, whatsappHref } from "../siteConfig";
 export default function Hero() {
   return (
     <section id="topo" className="hero">
-      <TrianglePattern className="hero__pattern" opacity={0.5} />
+      <TrianglePattern className="hero__pattern" opacity={0.5} animate />
       <div className="hero__scrim" aria-hidden="true" />
 
       <div className="container hero__inner">
