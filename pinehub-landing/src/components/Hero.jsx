@@ -12,7 +12,6 @@ export default function Hero() {
       <div className="container hero__inner">
         <Reveal className="hero__meta" as="div">
           <span>{site.city.toUpperCase()}</span>
-          <span>IDENTIDADE VISUAL / 2026</span>
         </Reveal>
 
         <Reveal delay={80}>
