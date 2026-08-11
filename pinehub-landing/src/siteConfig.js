@@ -137,8 +137,8 @@ export const portfolioProjects = [
   },
   {
     name: "Manu's Smash Burguer",
-    tag: "Branding & Audiovisual",
-    icon: "camera",
+    tag: "Audiovisual",
+    icon: "video",
     description: "Identidade visual e conteúdo audiovisual para o dia a dia da marca.",
     images: [
       "/portfolio/manus-1.jpg",
@@ -161,8 +161,8 @@ export const portfolioProjects = [
   },
   {
     name: "Dr. Rafael Durand",
-    tag: "Branding",
-    icon: "target",
+    tag: "Audiovisual",
+    icon: "video",
     description: "Identidade visual profissional para consolidar a marca pessoal.",
     video: "/portfolio/rafael-1.mp4",
     videoPoster: "/portfolio/rafael-poster.jpg",
