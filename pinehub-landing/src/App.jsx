@@ -4,7 +4,6 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Differentiators from "./components/Differentiators";
 import Portfolio from "./components/Portfolio";
-import Faq from "./components/Faq";
 import Process from "./components/Process";
 import FinalCta from "./components/FinalCta";
 import Footer from "./components/Footer";
@@ -22,7 +21,6 @@ function App() {
         <Services />
         <Differentiators />
         <Portfolio />
-        <Faq />
         <Process />
         <FinalCta />
       </main>

@@ -21,11 +21,14 @@ export default function About() {
           Uma agência construída para crescer com raízes.
         </Reveal>
         <Reveal as="p" className="about__lead" delay={120}>
-          [DESCRIÇÃO DA EMPRESA — apresente aqui, em 2 a 3 frases, a origem da
-          Pine Hub, o problema que ela resolve e para quem ela existe.] Com
-          base em Recife (PE) e ambição nacional, a Pine Hub nasce para unir
-          estratégia e tecnologia num único lugar — sem terceirizar o que
-          importa.
+          A Pine Hub nasceu em Recife (PE) para resolver um problema comum a
+          marcas em crescimento: a falta de uma produção audiovisual própria,
+          com direção editorial e estética premium, que sustente uma
+          comunicação de nível internacional. Por isso a fotografia e o vídeo
+          são o nosso maior foco hoje, somados a marketing, branding, landing
+          pages e automação com IA numa única operação. Existimos para marcas
+          que querem parar de parecer pequenas na tela e crescer com raízes
+          sólidas, de Recife para o Brasil.
         </Reveal>
 
         <div className="about__grid">
