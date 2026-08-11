@@ -174,7 +174,7 @@ button {
   transform-origin: center;
 }
 
-.triangle-pattern--animated .triangle-pattern__cell {
+.triangle-pattern--animated .triangle-pattern__cell--up {
   animation: triangle-pulse 6s ease-in-out infinite;
 }
 

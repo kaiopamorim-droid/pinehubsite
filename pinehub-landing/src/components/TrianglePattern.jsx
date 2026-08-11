@@ -30,7 +30,7 @@ export default function TrianglePattern({ className = "", opacity = 1, animate =
             key={i}
             points={points}
             fill={tone}
-            className="triangle-pattern__cell"
+            className={`triangle-pattern__cell ${up ? "triangle-pattern__cell--up" : ""}`}
             style={{ animationDelay: `${(i % 7) * 0.35}s` }}
           />
         );
