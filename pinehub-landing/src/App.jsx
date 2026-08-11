@@ -1,3 +1,4 @@
+import ScrollProgress from "./components/ScrollProgress";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -14,6 +15,7 @@ function App() {
       <a href="#conteudo" className="skip-link">
         Pular para o conteúdo
       </a>
+      <ScrollProgress />
       <Header />
       <main id="conteudo">
         <Hero />

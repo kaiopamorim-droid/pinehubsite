@@ -49,6 +49,11 @@ export default function Hero() {
           Branding · Landing Pages · Automação com IA
         </Reveal>
       </div>
+
+      <a href="#sobre" className="hero__scroll-cue" aria-label="Rolar para saber mais">
+        <span className="hero__scroll-cue-arrow" aria-hidden="true" />
+        <span className="hero__scroll-cue-label">Role para saber mais</span>
+      </a>
     </section>
   );
 }
