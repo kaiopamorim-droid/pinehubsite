@@ -130,12 +130,6 @@ export const process = [
 // símbolo vetorial da marca em vez de foto, mais leve e sempre nítido.
 export const portfolioProjects = [
   {
-    name: "Instituto Brenda Pinheiro",
-    tag: "Audiovisual",
-    icon: "video",
-    description: "Produção audiovisual com direção editorial e estética premium.",
-  },
-  {
     name: "Manu's Smash Burguer",
     tag: "Audiovisual",
     icon: "video",
