@@ -22,23 +22,38 @@ export default function Portfolio() {
             const Icon = iconMap[p.icon];
             return (
               <Reveal key={p.name} delay={i * 70}>
-                <a
-                  className="portfolio-card"
-                  href={p.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <div className="portfolio-card">
                   <div className="portfolio-card__media">
-                    <TrianglePattern opacity={0.4} />
-                    <span className="portfolio-card__symbol">
-                      <Icon width={30} height={30} />
-                    </span>
+                    {p.images ? (
+                      p.images.map((src, imgIndex) => (
+                        <img
+                          key={src}
+                          src={src}
+                          alt={`${p.name} — foto ${imgIndex + 1}`}
+                          className="portfolio-card__photo"
+                          style={{
+                            animationDelay: `${imgIndex * 3}s`,
+                            zIndex: p.images.length - imgIndex,
+                          }}
+                        />
+                      ))
+                    ) : (
+                      <>
+                        <TrianglePattern opacity={0.4} />
+                        <span className="portfolio-card__symbol">
+                          <Icon width={30} height={30} />
+                        </span>
+                      </>
+                    )}
                   </div>
                   <div className="portfolio-card__foot">
-                    <span>{p.name}</span>
-                    <span className="portfolio-card__tag">{p.tag}</span>
+                    <div className="portfolio-card__row">
+                      <span>{p.name}</span>
+                      <span className="portfolio-card__tag">{p.tag}</span>
+                    </div>
+                    <p className="portfolio-card__desc">{p.description}</p>
                   </div>
-                </a>
+                </div>
               </Reveal>
             );
           })}

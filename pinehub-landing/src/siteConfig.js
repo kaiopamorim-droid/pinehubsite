@@ -125,33 +125,45 @@ export const process = [
   },
 ];
 
-// Projetos reais (fonte: https://pinehub.myportfolio.com/work).
-// Cada card usa um símbolo vetorial da marca em vez de foto — mais leve,
-// sempre nítido e sem depender de link externo de imagem.
+// Projetos reais (fonte original: https://pinehub.myportfolio.com/work).
+// Exibidos direto na landing page, sem link externo — cada card usa um
+// símbolo vetorial da marca em vez de foto, mais leve e sempre nítido.
 export const portfolioProjects = [
   {
     name: "Instituto Brenda Pinheiro",
     tag: "Audiovisual",
     icon: "video",
-    href: "https://pinehub.myportfolio.com/instituto-brenda-pinheiro",
+    description: "Produção audiovisual com direção editorial e estética premium.",
   },
   {
     name: "Manu's Smash Burguer",
     tag: "Branding & Audiovisual",
     icon: "camera",
-    href: "https://pinehub.myportfolio.com/manus-smash-burguer",
+    description: "Identidade visual e conteúdo audiovisual para o dia a dia da marca.",
+    images: [
+      "/portfolio/manus-1.jpg",
+      "/portfolio/manus-2.jpg",
+      "/portfolio/manus-3.jpg",
+    ],
   },
   {
     name: "Concept Carnes",
     tag: "Branding",
     icon: "triangle",
-    href: "https://pinehub.myportfolio.com/concept-carnes",
+    description: "Identidade visual construída para transmitir solidez e qualidade.",
+    images: [
+      "/portfolio/concept-1.jpg",
+      "/portfolio/concept-2.png",
+      "/portfolio/concept-3.png",
+      "/portfolio/concept-4.png",
+      "/portfolio/concept-5.png",
+    ],
   },
   {
     name: "Dr. Rafael Durand",
     tag: "Branding",
     icon: "target",
-    href: "https://pinehub.myportfolio.com/dr-rafael-durand",
+    description: "Identidade visual profissional para consolidar a marca pessoal.",
   },
 ];
 
