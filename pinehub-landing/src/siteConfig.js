@@ -15,6 +15,8 @@ export const site = {
 
   email: "pinehubmkt@gmail.com",
   instagram: "@pinehub_",
+
+  photosGalleryUrl: "https://pine-hub-fotos-git-main-pinehub.vercel.app/",
 };
 
 export const whatsappHref = () =>
@@ -160,6 +162,20 @@ export const portfolioProjects = [
     description: "Identidade visual profissional para consolidar a marca pessoal.",
     video: "/portfolio/rafael-1.mp4",
     videoPoster: "/portfolio/rafael-poster.jpg",
+  },
+  {
+    name: "Team Bola Pro Alto",
+    tag: "Fotografia",
+    icon: "camera",
+    description: "Cobertura fotográfica esportiva para captar a energia dos treinos na praia.",
+    images: [
+      "/portfolio/teambola-1.jpg",
+      "/portfolio/teambola-2.jpg",
+      "/portfolio/teambola-3.jpg",
+      "/portfolio/teambola-4.jpg",
+      "/portfolio/teambola-5.jpg",
+      "/portfolio/teambola-6.jpg",
+    ],
   },
 ];
 

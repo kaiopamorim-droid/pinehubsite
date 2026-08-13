@@ -1,6 +1,6 @@
 import Reveal from "./Reveal";
 import TrianglePattern from "./TrianglePattern";
-import { portfolioProjects } from "../siteConfig";
+import { portfolioProjects, site } from "../siteConfig";
 import { iconMap } from "./icons";
 
 export default function Portfolio() {
@@ -47,10 +47,9 @@ export default function Portfolio() {
                             alt={`${p.name} — foto ${imgIndex + 1}`}
                             className="portfolio-card__photo"
                             style={{
-                              animationName:
-                                count >= 5
-                                  ? "portfolio-crossfade-5"
-                                  : "portfolio-crossfade-3",
+                              animationName: `portfolio-crossfade-${
+                                [3, 5, 6].includes(count) ? count : 3
+                              }`,
                               animationDuration: `${count * perSlide}s`,
                               animationDelay: `${imgIndex * perSlide}s`,
                               zIndex: count - imgIndex,
@@ -79,6 +78,17 @@ export default function Portfolio() {
             );
           })}
         </div>
+
+        <Reveal className="portfolio__more" delay={portfolioProjects.length * 70}>
+          <a
+            className="btn btn--ghost"
+            href={site.photosGalleryUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver mais fotos →
+          </a>
+        </Reveal>
       </div>
     </section>
   );

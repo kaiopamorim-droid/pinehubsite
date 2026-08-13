@@ -738,6 +738,12 @@ button {
   gap: 28px;
 }
 
+.portfolio__more {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
 .portfolio-card {
   display: block;
   border: 1px solid rgba(16, 41, 31, 0.12);
@@ -817,6 +823,17 @@ button {
     opacity: 1;
   }
   20%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes portfolio-crossfade-6 {
+  0%,
+  14% {
+    opacity: 1;
+  }
+  16.67%,
   100% {
     opacity: 0;
   }
