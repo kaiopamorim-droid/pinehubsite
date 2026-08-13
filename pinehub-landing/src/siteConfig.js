@@ -16,7 +16,7 @@ export const site = {
   email: "pinehubmkt@gmail.com",
   instagram: "@pinehub_",
 
-  photosGalleryUrl: "https://pine-hub-fotos-git-main-pinehub.vercel.app/",
+  photosGalleryUrl: "https://pine-hub-fotos.vercel.app/",
 };
 
 export const whatsappHref = () =>

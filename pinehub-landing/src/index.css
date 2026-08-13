@@ -344,6 +344,10 @@ button {
   color: var(--pine-700);
 }
 
+.header__nav-actions {
+  display: none;
+}
+
 .header__actions {
   display: flex;
   align-items: center;
@@ -397,6 +401,18 @@ button {
 
   .header__actions .btn--sm {
     display: none;
+  }
+
+  .header__nav-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 24px 24px;
+  }
+
+  .header__nav-actions .btn {
+    width: 100%;
+    justify-content: center;
   }
 
   .header__burger {

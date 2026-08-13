@@ -30,6 +30,27 @@ export default function Header() {
               </li>
             ))}
           </ul>
+
+          <div className="header__nav-actions">
+            <a
+              className="btn btn--primary btn--sm"
+              href={site.photosGalleryUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+            >
+              Pine Hub Fotos
+            </a>
+            <a
+              className="btn btn--primary btn--sm"
+              href={whatsappHref()}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+            >
+              Falar no WhatsApp
+            </a>
+          </div>
         </nav>
 
         <div className="header__actions">
