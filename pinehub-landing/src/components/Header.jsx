@@ -34,7 +34,7 @@ export default function Header() {
 
         <div className="header__actions">
           <a
-            className="btn btn--ghost btn--sm"
+            className="btn btn--primary btn--sm"
             href={site.photosGalleryUrl}
             target="_blank"
             rel="noopener noreferrer"
