@@ -1,6 +1,6 @@
 import Reveal from "./Reveal";
 import TrianglePattern from "./TrianglePattern";
-import { portfolioProjects, site } from "../siteConfig";
+import { portfolioProjects } from "../siteConfig";
 import { iconMap } from "./icons";
 
 export default function Portfolio() {
@@ -78,17 +78,6 @@ export default function Portfolio() {
             );
           })}
         </div>
-
-        <Reveal className="portfolio__more" delay={portfolioProjects.length * 70}>
-          <a
-            className="btn btn--primary"
-            href={site.photosGalleryUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ver mais fotos →
-          </a>
-        </Reveal>
       </div>
     </section>
   );
