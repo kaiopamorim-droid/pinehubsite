@@ -81,7 +81,7 @@ export default function Portfolio() {
 
         <Reveal className="portfolio__more" delay={portfolioProjects.length * 70}>
           <a
-            className="btn btn--ghost"
+            className="btn btn--primary"
             href={site.photosGalleryUrl}
             target="_blank"
             rel="noopener noreferrer"
