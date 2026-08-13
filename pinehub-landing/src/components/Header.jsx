@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
-import { navLinks, whatsappHref } from "../siteConfig";
+import { navLinks, whatsappHref, site } from "../siteConfig";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -33,6 +33,14 @@ export default function Header() {
         </nav>
 
         <div className="header__actions">
+          <a
+            className="btn btn--ghost btn--sm"
+            href={site.photosGalleryUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Pine Hub Fotos
+          </a>
           <a
             className="btn btn--primary btn--sm"
             href={whatsappHref()}
