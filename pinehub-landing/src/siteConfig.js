@@ -177,6 +177,20 @@ export const portfolioProjects = [
       "/portfolio/teambola-6.jpg",
     ],
   },
+  {
+    name: "Casamento MeN",
+    tag: "Fotografia",
+    icon: "camera",
+    description: "Cobertura fotográfica de casamento, dos detalhes à emoção do casal.",
+    images: [
+      "/portfolio/casamento-1.jpg",
+      "/portfolio/casamento-2.jpg",
+      "/portfolio/casamento-3.jpg",
+      "/portfolio/casamento-4.jpg",
+      "/portfolio/casamento-5.jpg",
+      "/portfolio/casamento-6.jpg",
+    ],
+  },
 ];
 
 export const faq = [
