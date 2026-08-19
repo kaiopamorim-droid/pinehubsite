@@ -17,6 +17,7 @@ export const site = {
   instagram: "@pinehub_",
 
   photosGalleryUrl: "https://pine-hub-fotos.vercel.app/",
+  pinePostUrl: "https://pinepost-1cln.vercel.app/login",
 };
 
 export const whatsappHref = () =>

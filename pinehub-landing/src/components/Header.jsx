@@ -43,6 +43,15 @@ export default function Header() {
             </a>
             <a
               className="btn btn--primary btn--sm"
+              href={site.pinePostUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+            >
+              PinePost
+            </a>
+            <a
+              className="btn btn--primary btn--sm"
               href={whatsappHref()}
               target="_blank"
               rel="noopener noreferrer"
@@ -61,6 +70,14 @@ export default function Header() {
             rel="noopener noreferrer"
           >
             Pine Hub Fotos
+          </a>
+          <a
+            className="btn btn--primary btn--sm"
+            href={site.pinePostUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            PinePost
           </a>
           <a
             className="btn btn--primary btn--sm"
