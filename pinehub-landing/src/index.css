@@ -855,6 +855,17 @@ button {
   }
 }
 
+@keyframes portfolio-crossfade-8 {
+  0%,
+  10.5% {
+    opacity: 1;
+  }
+  12.5%,
+  100% {
+    opacity: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .portfolio-card__photo {
     animation: none;

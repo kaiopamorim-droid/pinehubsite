@@ -192,6 +192,22 @@ export const portfolioProjects = [
       "/portfolio/casamento-6.jpg",
     ],
   },
+  {
+    name: "Casamento",
+    tag: "Fotografia",
+    icon: "camera",
+    description: "Cobertura fotográfica de casamento, registrando cada momento da celebração.",
+    images: [
+      "/portfolio/casamento2-1.jpg",
+      "/portfolio/casamento2-2.jpg",
+      "/portfolio/casamento2-3.jpg",
+      "/portfolio/casamento2-4.jpg",
+      "/portfolio/casamento2-5.jpg",
+      "/portfolio/casamento2-6.jpg",
+      "/portfolio/casamento2-7.jpg",
+      "/portfolio/casamento2-8.jpg",
+    ],
+  },
 ];
 
 export const faq = [

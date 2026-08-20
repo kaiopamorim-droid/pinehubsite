@@ -48,7 +48,7 @@ export default function Portfolio() {
                             className="portfolio-card__photo"
                             style={{
                               animationName: `portfolio-crossfade-${
-                                [3, 5, 6].includes(count) ? count : 3
+                                [3, 5, 6, 8].includes(count) ? count : 3
                               }`,
                               animationDuration: `${count * perSlide}s`,
                               animationDelay: `${imgIndex * perSlide}s`,
