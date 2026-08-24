@@ -175,7 +175,6 @@ export const portfolioProjects = [
       "/portfolio/teambola-3.jpg",
       "/portfolio/teambola-4.jpg",
       "/portfolio/teambola-5.jpg",
-      "/portfolio/teambola-6.jpg",
     ],
   },
   {
