@@ -189,7 +189,6 @@ export const portfolioProjects = [
       "/portfolio/casamento-3.jpg",
       "/portfolio/casamento-4.jpg",
       "/portfolio/casamento-5.jpg",
-      "/portfolio/casamento-6.jpg",
     ],
   },
   {
@@ -203,9 +202,6 @@ export const portfolioProjects = [
       "/portfolio/casamento2-3.jpg",
       "/portfolio/casamento2-4.jpg",
       "/portfolio/casamento2-5.jpg",
-      "/portfolio/casamento2-6.jpg",
-      "/portfolio/casamento2-7.jpg",
-      "/portfolio/casamento2-8.jpg",
     ],
   },
 ];
