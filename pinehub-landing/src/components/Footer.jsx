@@ -1,5 +1,5 @@
 import Logo from "./Logo";
-import { site, navLinks, whatsappHref } from "../siteConfig";
+import { site, navLinks, whatsappHref, trackWhatsappConversion } from "../siteConfig";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -25,7 +25,12 @@ export default function Footer() {
         <div className="footer__contact">
           <p>
             <span>WhatsApp</span>{" "}
-            <a href={whatsappHref()} target="_blank" rel="noopener noreferrer">
+            <a
+              href={whatsappHref()}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={trackWhatsappConversion}
+            >
               +{site.whatsappNumber}
             </a>
           </p>

@@ -25,6 +25,18 @@ export const whatsappHref = () =>
     site.whatsappMessage
   )}`;
 
+// Dispara a conversão do Google Ads (Contato) quando alguém clica em
+// qualquer botão de WhatsApp do site.
+export const trackWhatsappConversion = () => {
+  if (typeof window !== "undefined" && typeof window.gtag === "function") {
+    window.gtag("event", "conversion", {
+      send_to: "AW-18382307162/LMAiCNu4s-gcENr-rr1E",
+      value: 1.0,
+      currency: "BRL",
+    });
+  }
+};
+
 // Audiovisual (foto e vídeo) é o foco principal da operação agora —
 // por isso lidera a lista de serviços.
 export const services = [

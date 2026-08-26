@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
-import { navLinks, whatsappHref, site } from "../siteConfig";
+import { navLinks, whatsappHref, site, trackWhatsappConversion } from "../siteConfig";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -55,7 +55,10 @@ export default function Header() {
               href={whatsappHref()}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                setOpen(false);
+                trackWhatsappConversion();
+              }}
             >
               Falar no WhatsApp
             </a>
@@ -84,6 +87,7 @@ export default function Header() {
             href={whatsappHref()}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackWhatsappConversion}
           >
             Falar no WhatsApp
           </a>

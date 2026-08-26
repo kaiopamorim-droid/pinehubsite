@@ -1,7 +1,7 @@
 import Logo from "./Logo";
 import TrianglePattern from "./TrianglePattern";
 import Reveal from "./Reveal";
-import { site, whatsappHref } from "../siteConfig";
+import { site, whatsappHref, trackWhatsappConversion } from "../siteConfig";
 
 export default function Hero() {
   return (
@@ -35,6 +35,7 @@ export default function Hero() {
             href={whatsappHref()}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackWhatsappConversion}
           >
             Falar com a Pine Hub →
           </a>

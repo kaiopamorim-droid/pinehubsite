@@ -1,6 +1,6 @@
 import Reveal from "./Reveal";
 import TrianglePattern from "./TrianglePattern";
-import { whatsappHref } from "../siteConfig";
+import { whatsappHref, trackWhatsappConversion } from "../siteConfig";
 
 export default function FinalCta() {
   return (
@@ -18,6 +18,7 @@ export default function FinalCta() {
             href={whatsappHref()}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackWhatsappConversion}
           >
             Falar com a Pine Hub →
           </a>
