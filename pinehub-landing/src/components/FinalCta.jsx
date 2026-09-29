@@ -1,11 +1,9 @@
 import Reveal from "./Reveal";
-import TrianglePattern from "./TrianglePattern";
 import { whatsappHref, trackWhatsappConversion } from "../siteConfig";
 
 export default function FinalCta() {
   return (
     <section id="contato" className="final-cta">
-      <TrianglePattern className="final-cta__pattern" opacity={0.35} />
       <div className="container final-cta__inner">
         <Reveal as="h2">Vamos transformar sua marca em resultado?</Reveal>
         <Reveal as="p" delay={80}>

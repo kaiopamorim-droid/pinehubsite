@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
-import { navLinks, whatsappHref, site, trackWhatsappConversion } from "../siteConfig";
+import { whatsappHref, trackWhatsappConversion } from "../siteConfig";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
-  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -20,71 +19,15 @@ export default function Header() {
           <Logo variant="dark" withWordmark />
         </a>
 
-        <nav className={`header__nav ${open ? "is-open" : ""}`} aria-label="Navegação principal">
-          <ul>
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <a href={link.href} onClick={() => setOpen(false)}>
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-
-          <div className="header__nav-actions">
-            <a
-              className="btn btn--primary btn--sm"
-              href={site.pinePostUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setOpen(false)}
-            >
-              PinePost
-            </a>
-            <a
-              className="btn btn--primary btn--sm"
-              href={whatsappHref()}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => {
-                setOpen(false);
-                trackWhatsappConversion();
-              }}
-            >
-              Falar no WhatsApp
-            </a>
-          </div>
-        </nav>
-
-        <div className="header__actions">
-          <a
-            className="btn btn--primary btn--sm"
-            href={site.pinePostUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            PinePost
-          </a>
-          <a
-            className="btn btn--primary btn--sm"
-            href={whatsappHref()}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={trackWhatsappConversion}
-          >
-            Falar no WhatsApp
-          </a>
-          <button
-            className={`header__burger ${open ? "is-open" : ""}`}
-            aria-label={open ? "Fechar menu" : "Abrir menu"}
-            aria-expanded={open}
-            onClick={() => setOpen((v) => !v)}
-          >
-            <span />
-            <span />
-            <span />
-          </button>
-        </div>
+        <a
+          className="btn btn--primary btn--sm"
+          href={whatsappHref()}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={trackWhatsappConversion}
+        >
+          Falar no WhatsApp
+        </a>
       </div>
     </header>
   );

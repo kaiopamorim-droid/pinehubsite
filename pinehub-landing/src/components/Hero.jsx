@@ -1,12 +1,10 @@
 import Logo from "./Logo";
-import TrianglePattern from "./TrianglePattern";
 import Reveal from "./Reveal";
 import { site, whatsappHref, trackWhatsappConversion } from "../siteConfig";
 
 export default function Hero() {
   return (
     <section id="topo" className="hero">
-      <TrianglePattern className="hero__pattern" opacity={0.5} animate />
       <div className="hero__scrim" aria-hidden="true" />
 
       <div className="container hero__inner">
@@ -38,9 +36,6 @@ export default function Hero() {
             onClick={trackWhatsappConversion}
           >
             Falar com a Pine Hub →
-          </a>
-          <a className="btn btn--ghost btn--lg" href="#servicos">
-            Ver serviços
           </a>
         </Reveal>
 
