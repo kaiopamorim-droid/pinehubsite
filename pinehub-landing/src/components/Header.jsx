@@ -34,15 +34,6 @@ export default function Header() {
           <div className="header__nav-actions">
             <a
               className="btn btn--primary btn--sm"
-              href={site.photosGalleryUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setOpen(false)}
-            >
-              Pine Hub Fotos
-            </a>
-            <a
-              className="btn btn--primary btn--sm"
               href={site.pinePostUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -66,14 +57,6 @@ export default function Header() {
         </nav>
 
         <div className="header__actions">
-          <a
-            className="btn btn--primary btn--sm"
-            href={site.photosGalleryUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Pine Hub Fotos
-          </a>
           <a
             className="btn btn--primary btn--sm"
             href={site.pinePostUrl}
