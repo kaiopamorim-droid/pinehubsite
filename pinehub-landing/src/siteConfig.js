@@ -145,30 +145,6 @@ export const process = [
 // símbolo vetorial da marca em vez de foto, mais leve e sempre nítido.
 export const portfolioProjects = [
   {
-    name: "Manu's Smash Burguer",
-    tag: "Audiovisual",
-    icon: "video",
-    description: "Identidade visual e conteúdo audiovisual para o dia a dia da marca.",
-    images: [
-      "/portfolio/manus-1.jpg",
-      "/portfolio/manus-2.jpg",
-      "/portfolio/manus-3.jpg",
-    ],
-  },
-  {
-    name: "Concept Carnes",
-    tag: "Branding",
-    icon: "triangle",
-    description: "Identidade visual construída para transmitir solidez e qualidade.",
-    images: [
-      "/portfolio/concept-1.jpg",
-      "/portfolio/concept-2.png",
-      "/portfolio/concept-3.png",
-      "/portfolio/concept-4.png",
-      "/portfolio/concept-5.png",
-    ],
-  },
-  {
     name: "Dr. Rafael Durand",
     tag: "Audiovisual",
     icon: "video",
